@@ -1,9 +1,13 @@
 import { useNavigation } from "react-router-dom";
-const SubmitBtn = ({ formBtn }: { formBtn?: boolean }) => {
+type SubmitBtnProps = {
+  className?: string;
+  formBtn?: boolean;
+};
+const SubmitBtn = ({ className = "", formBtn }: SubmitBtnProps) => {
   const navigation = useNavigation();
   const isSubmitting = navigation.state === "submitting";
   return (
-    <button type="submit" className={`btn btn-block ${formBtn && "form-btn"} `} disabled={isSubmitting}>
+    <button type="submit" className={`btn btn-block ${className} ${formBtn && "form-btn"} `} disabled={isSubmitting}>
       {isSubmitting ? "submitting" : "submit"}
     </button>
   );
