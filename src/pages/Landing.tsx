@@ -15,10 +15,10 @@ const Landing = () => {
             job <span className="text-primary-500">tracking</span> app
           </h1>
           <p className="leading-loose mb-6 max-w-[35em]">
-            I'm baby man bun +1 fit palo santo austin lumbersexual sus. Fingerstache helvetica
-            polaroid cold-pressed hashtag, 3 wolf moon vape waistcoat man bun four loko direct trade
-            tousled taxidermy leggings. Fit edison bulb tumeric blackbird spyplane, trust fund
-            ethical thundercats banjo praxis same twee.
+            I'm baby man bun +1 fit palo santo austin lumber sus. Fingerstache helvetica polaroid
+            cold-pressed hashtag, 3 wolf moon vape waistcoat man bun four loko direct trade tousled
+            taxidermy leggings. Fit edison bulb tumeric blackbird spyplane, trust fund ethical
+            thundercats banjo praxis same twee.
           </p>
           <Link to="/register" className="btn mr-4">
             Register

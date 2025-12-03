@@ -44,7 +44,7 @@
   --nav-height: 6rem;
 }
 
-//leading-none for --letter-spacing: 1px;
+/* leading-none for --letter-spacing: 1px; */
 @layer base {
   html {
     @apply text-[100%];
@@ -67,7 +67,7 @@
   }
 
   h4 {
-    @apply font-normal leading-none capitalize text-[clamp(1rem,2vw,1.25rem)];
+    @apply font-normal leading-none capitalize text-[clamp(1rem,2vw,2rem)];
   }
 
   h5 {
@@ -83,7 +83,7 @@
   }
 
   a {
-    @apply no-underline;
+    @apply no-underline font-semibold;
   }
 }
 
@@ -91,6 +91,7 @@
   /* .cont {
     @apply w-[var(--fluid-width)] max-w-[var(--max-width)] mx-auto;
   } */
+   
   .cont {
     @apply w-[var(--fluid-width)] max-w-7xl mx-auto;
   }
@@ -141,7 +142,7 @@
   }
 
   .form-label {
-    @apply block text-sm mb-3 capitalize tracking-wider leading-6;
+    @apply block text-sm mb-3 capitalize tracking-wide leading-3 font-semibold;
   }
 
   .form-input,
@@ -160,7 +161,7 @@
   }
 
   .form-alert {
-    @apply text-red-dark tracking-wider capitalize;
+    @apply text-red-dark tracking-wide capitalize;
   }
 
   /* LOADING SPINNER */

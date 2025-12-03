@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, Form } from "react-router-dom";
 // import Wrapper from "../assets/wrappers/RegisterAndLoginPage";
 import { FormRow, Logo, SubmitBtn } from "../components";
 // import customFetch from '../utils/customFetch';
@@ -21,10 +21,9 @@ import { FormRow, Logo, SubmitBtn } from "../components";
 const Register = () => {
   return (
     <section className="min-h-screen grid items-center">
-      <form method="post" className="max-w-[400px] border-t-[5px] border-primary-500 form">
-        {/* className="form" */}
+      <Form method="post" className="max-w-[400px] border-t-[5px] border-primary-500 form">
         <Logo className="block mx-auto mb-[1.38rem]" />
-        <h4 className="text-center mb-[1.38rem]">Register</h4>
+        <h4 className="text-center mb-[1.38rem] font-semibold">Register</h4>
         <FormRow type="text" name="name" />
         <FormRow type="text" name="lastName" labelText="last name" />
         <FormRow type="text" name="location" />
@@ -38,34 +37,8 @@ const Register = () => {
             Login
           </Link>
         </p>
-      </form>
+      </Form>
     </section>
-    // <Wrapper>
-    //   <form className="form">
-    //     <Logo />
-    //   </form>
-    // </Wrapper>
   );
 };
 export default Register;
-
-{
-  /* <section>
-      <Form method="post" className="form">
-        <Logo />
-        <h4>Register</h4>
-        <FormRow type="text" name="name" />
-        <FormRow type="text" name="lastName" labelText="last name" />
-        <FormRow type="text" name="location" />
-        <FormRow type="email" name="email" />
-        <FormRow type="password" name="password" />
-        <SubmitBtn />
-        <p>
-          Already a member?
-          <Link to="/login" className="member-btn">
-            Login
-          </Link>
-        </p>
-      </Form>
-    </section> */
-}
