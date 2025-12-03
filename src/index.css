@@ -91,7 +91,10 @@
   /* .cont {
     @apply w-[var(--fluid-width)] max-w-[var(--max-width)] mx-auto;
   } */
-   
+  .side-bar-color {
+    @apply bg-gray-50 dark:bg-[#3f3f3f];
+  }
+
   .cont {
     @apply w-[var(--fluid-width)] max-w-7xl mx-auto;
   }

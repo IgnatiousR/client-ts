@@ -42,7 +42,7 @@ const Login = () => {
         <Logo className="block mx-auto mb-[1.38rem]" />
         <h4 className="text-center mb-[1.38rem] font-semibold">login</h4>
         <FormRow type="email" name="email" />
-        <FormRow type="password" name="password" />
+        <FormRow type="password" name="password" inputClassName="mb-4" />
         <SubmitBtn />
         <button type="button" className="btn btn-block mt-4" onClick={loginDemoUser}>
           explore the app
